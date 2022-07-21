@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel='stylesheet' type='text/css' href="calculator.css">
+    <script src="calculator.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <table> 
+        <tr>
+            <th id="answer" colspan="10" ></th>
+            <td><input id="C" class="unstyle-button" type="button" value="C"></td>
+        </tr>
+       
+        <tr>
+            <td><input id="7" class="unstyle-button" type="button" value="7" onclick="test(event)"></td>
+            <td><input id="8" class="unstyle-button" type="button" value="8" onclick="test(event)"></td>
+            <td><input id="9" class="unstyle-button" type="button" value="9" onclick="test(event)"></td>
+            <td><input id="add" class="unstyle-button" type="button" value="+" onclick="test(event)"></td>
+        </tr>
+        <tr>
+            <td><input id="4" class="unstyle-button" type="button" value="4" onclick="test(event)"></td>
+            <td><input id="5" class="unstyle-button" type="button" value="5" onclick="test(event)"></td>
+            <td><input id="6" class="unstyle-button" type="button" value="6" onclick="test(event)"></td>
+            <td><input id="subtract" class="unstyle-button" type="button" value="-" onclick="test(event)"></td>
+
+        </tr>
+        <tr>
+            <td><input id="1" class="unstyle-button" type="button" value="1" onclick="test(event)"></td>
+            <td><input id="2" class="unstyle-button" type="button" value="2" onclick="test(event)"></td>
+            <td><input id="3" class="unstyle-button" type="button" value="3" onclick="test(event)"></td>
+            <td><input id="multiply" class="unstyle-button" type="button" value="*" onclick="test(event)"></td>
+        </tr>
+        <tr>
+            <td><input id="0" class="unstyle-button" type="button" value="0" onclick="test(event)"></td>
+            <td><input id="decimal" class="unstyle-button" type="button" value="." onclick="test(event)"></td>
+            <td><input id="divide" class="unstyle-button" type="button" value="/" onclick="test(event)"></td>
+            <td><input id="equal" class="unstyle-button" type="button" value="=" onclick="test(event)"></td>
+        </tr>
+    </table>
+    <p>*Rounds answers to two decimal places if needed</p>
+</body>
+</html>

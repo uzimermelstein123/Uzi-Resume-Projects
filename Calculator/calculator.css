@@ -1,0 +1,56 @@
+table {
+    border: solid;
+    /* border-spacing: 50px; */
+    border-spacing: 5vh;
+    background-color: khaki;
+    min-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+th {
+    text-align: center;
+    background-color: white;
+    /* font-size: 50px; */
+    font-size: 5vh;
+
+}
+td {
+    /* height: 100px; */
+    height: 10vh;
+
+    /* width: 50px; */
+    width: 5vh;
+    border-radius: 50%;
+    font-weight: bolder;
+}
+td #C {
+    background-color: black;
+    color: red;
+    font-weight: bold;
+}
+td #equal {
+    background-color: blue;
+    color: yellow;
+    font-weight: bold;
+
+}
+.unstyle-button {
+    text-align: center;
+    border: 1px solid black;
+    background-color: turquoise;
+    color: black;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    cursor: pointer; 
+}
+input:hover {
+    opacity: 80%;
+}
+input:active {
+    border: 5px solid green;
+}
+p {
+    margin-left: auto;
+    margin-right: auto;
+}
