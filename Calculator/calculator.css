@@ -44,6 +44,9 @@ td #equal {
     border-radius: 50%;
     cursor: pointer; 
 }
+input {
+    font-size: 20px;
+}
 input:hover {
     opacity: 80%;
 }
