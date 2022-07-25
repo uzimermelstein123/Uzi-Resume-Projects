@@ -1,5 +1,6 @@
 table {
     border: solid;
+    vertical-align: top;
     /* border-spacing: 50px; */
     border-spacing: 5vh;
     background-color: khaki;
@@ -7,6 +8,7 @@ table {
     margin-left: auto;
     margin-right: auto;
 }
+
 th {
     text-align: center;
     background-color: white;
@@ -43,6 +45,9 @@ td #equal {
     height: 65px;
     border-radius: 50%;
     cursor: pointer; 
+}
+input {
+    font-size: 20px;
 }
 input:hover {
     opacity: 80%;
