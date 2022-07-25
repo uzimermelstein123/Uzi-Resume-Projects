@@ -1,0 +1,38 @@
+
+
+body {
+    text-align: center;
+    margin-top: 10px;
+    background-color: orange;
+}
+header {
+    display: inline;
+    width: fit-content;
+}
+select {
+    background-color: lightblue;
+}
+input {
+    background-color: lightblue;
+}
+input:focus {
+    border-color: blue;
+}
+#enterInput {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3px;
+}
+#search {
+    border-radius: 15px;
+    padding: 5px;
+}
+/* 
+    TODO:
+    1) Put the enter button on the side of the enter city button so that you can 
+    push enter on the right of the search
+    2) Also, add a way that when the enter key is pushed it searches for the city
+    3) Also, add a way for the input to be deleted after you re-click to enter in 
+    another city 
+*/
