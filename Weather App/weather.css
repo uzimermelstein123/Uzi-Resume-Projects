@@ -28,6 +28,17 @@ input:focus {
     border-radius: 15px;
     padding: 5px;
 }
+a {
+    position: absolute;
+    text-emphasis: none;
+    font-size: 20px;
+    left: 10px;
+    text-decoration: none;
+    color: blue;
+}
+a:hover {
+    color: -webkit-link;
+}
 /* 
     TODO:
     1) Put the enter button on the side of the enter city button so that you can 
