@@ -22,45 +22,7 @@ class Any {
             cout << "Any primitive type" << endl;
         }
 };
-// class Integer : public Any {
-//     private:
-//         int Int;
-//     public:
 
-//         Integer() {}
-//         Integer(int inputInt) {
-//             Int = inputInt;
-//         }
-//         ~Integer() {
-//             cout << "Integer Destructor" << endl;
-//         }
-//         int getValue() {
-//             return Int;
-//         }
-//         virtual void showValue() {
-//             cout << "It's an integer: " << Integer::getValue() << endl;
-//             // return Int;
-//         }
-// };
-// class String : public Any {
-//     private:
-//         string Str;
-//     public:
-//         String() {}
-//         String(string inputStr) {
-//             Str = inputStr;
-//         }
-//         ~String() {
-//             cout << "String Destructor" << endl;
-//         }
-//         string getValue() {
-//             return Str;
-//         }
-//         virtual void showValue() {
-//             cout << "It's a string: " << String::getValue() << endl;
-
-//         }
-// };
 template<typename S>
 class PrimType : public Any {
     private:
@@ -103,8 +65,6 @@ class PrimType : public Any {
             cout << findType(typeid(PrimType::getValue()).name());
         }
         virtual void showValue() {
-            // cout << "It's a " << findType(typeid(PrimType::getValue()).name()) << " : " 
-            //     << PrimType::getValue() << endl;
             cout << PrimType::getValue();
         }
 };
@@ -113,20 +73,27 @@ class PrimType : public Any {
 
 
 int main() {
-
+    // Driver Code
     vector<ANYPRIMTYPE> vec;
 
     vec.push_back(new PrimType<int>(2));
     vec.push_back(new PrimType<string>("test"));
     vec.push_back(new PrimType<char>('e'));
     vec.push_back(new PrimType<int>(2));
+    vec.push_back(new PrimType<string>("schiller"));
+    vec.push_back(new PrimType<int>(2));
 
+
+    cout << "{" << endl;
     for (int i = 0; i < vec.size(); i++) {
+        cout << "[ ";
         vec[i]->showValue();
-            cout << " ";
+            cout << ", ";
         vec[i]->showType();
-            cout << '\n';
+            cout << "],";
+        
     }
+    cout << "\n}" << endl; 
     
     // deallocate memeory when have an array of pointers
     for (int j = 0; j < vec.size(); j++) {
